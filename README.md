@@ -14,6 +14,8 @@ Having the goals Sochi, Edinburgh, Stockholm, and Cadiz:
 
 This will print the path, cost and visualize the path.
 
+![](https://i.imgur.com/hNLQuDY.jpg "Output image")
+
 # TODO
 1. Make own Dijkstra algorithm.
 2. Implement more testing to make sure everything goes right.
