@@ -88,8 +88,9 @@ def tryPath(G, perm):
 
 if __name__ == '__main__':
     # all nodes in you paths, change to input l8r
-    goals = ["Edinburgh", "Cadiz","Sochi", "Stockholm"]
-    print(":: Goals:", goals)
+    goals = input().split(" ")
+    for i in range(len(goals)):
+        goals[i] = goals[i].capitalize()
 
     # add nodes, 47 total
     G.add_nodes_from(graph.keys())
@@ -111,7 +112,6 @@ if __name__ == '__main__':
         for j in range(i, len(perms)-1):
             if perms[j] == perms[i][::-1]:
                 perms.pop(j)
-    print(":: permutations:", len(perms))
 
     # try each permutated path
     routes = []
@@ -132,7 +132,6 @@ if __name__ == '__main__':
     path, weight = routes[lowest]
     visualizePath(G, path)
     
-    print("\nShortest route = nr:", lowest+1, "costs", routes[lowest][1])
     print(path)
     
     time.sleep(4) # pause to see image
