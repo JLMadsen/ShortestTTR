@@ -19,6 +19,7 @@ This will print the path, cost and visualize the path.
 # TODO
 1. Make own Dijkstra algorithm.
 2. Implement more testing to make sure everything goes right.
+3. Add more maps.
 
 # Ticket to ride
 > https://en.wikipedia.org/wiki/Ticket_to_Ride_(board_game)
