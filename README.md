@@ -10,7 +10,7 @@ Python script for getting shortest path connecting all given goals in the board 
 # Usage
 Having the goals Sochi, Edinburgh, Stockholm, and Cadiz:
 
->ShortestTTR.py Sochi Edinburgh Stockholm and Cadiz
+>./ShortestTTR.py Sochi Edinburgh Stockholm and Cadiz
 
 This will print the path, cost and visualize the path.
 
@@ -20,6 +20,8 @@ This will print the path, cost and visualize the path.
 1. Make own Dijkstra algorithm.
 2. Implement more testing to make sure everything goes right.
 3. Add more maps.
+4. Add colors according to original TTR map.
+5. Export script to either an app or webpage.
 
 # Ticket to ride
 > https://en.wikipedia.org/wiki/Ticket_to_Ride_(board_game)
