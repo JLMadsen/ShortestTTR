@@ -10,7 +10,7 @@ Python script for getting shortest path connecting all given goals in the board 
 # Usage
 Having the goals Sochi, Edinburgh, Stockholm, and Cadiz:
 
->`ShortestTTR.py Sochi Edinburgh Stockholm and Cadiz`
+>ShortestTTR.py Sochi Edinburgh Stockholm and Cadiz
 
 This will print the path, cost and visualize the path.
 
