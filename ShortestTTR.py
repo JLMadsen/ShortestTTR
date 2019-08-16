@@ -52,7 +52,7 @@ def visualizePath(G, path):
 
 
 def tryPath(G, perm):
-    # paths are all the seperate paths between nodes, eg. einburg -> Sochi, Sochi -> Stockholm
+    # paths are all the seperate paths between nodes, eg. Edinburgh -> Sochi, Sochi -> Stockholm
     paths = []
     weight = 0
 
@@ -70,8 +70,6 @@ def tryPath(G, perm):
         if path[-1] == paths[i][0]:
             for node in paths[i][1:]:
                 path.append(node)
-        #else:
-        #    exit("Path start does not match previous path end:"+ paths[i][0] +"!="+ path[-1])
 
     # get weight for path
     for i in range(len(path)-1):
