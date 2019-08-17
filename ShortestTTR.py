@@ -18,6 +18,7 @@ def saveImage():
     widths = [G[u][v]['width'] for u,v in edges]
 
     # draw graph
+    #font_color='b'
     nx.draw(G, pos, edges=edges, edge_color=colors, width=widths, with_labels=True)
 
     # save to root dir as png
@@ -106,6 +107,10 @@ def main():
     #mapName = sys.argv[1]
     #mapName = input()
     mapName = "Europe"
+    
+    global graph
+    global pos
+    
     graph, pos = board.getMap(mapName)
     
     #goals = sys.argv[2:]

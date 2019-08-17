@@ -15,6 +15,10 @@ class Board():
     
     def getMap(self, mapName):
         
+        # this will be changed as more maps are implemented
+        if mapName != 'Europe':
+            exit('Map not implemented')
+        
         europe_nodes = {'Edinburgh': {'London': 4}, 
                         'London': {'Edinburgh': 4, 'Dieppe': 2, 'Amsterdam': 2}, 
                         'Dieppe': {'London': 2, 'Brest': 2, 'Paris': 1, 'Bruxelles': 2}, 
