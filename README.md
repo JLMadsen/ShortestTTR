@@ -1,11 +1,6 @@
 # ShortestTTR
 Python script for getting shortest path connecting all given goals in the board game "Ticket to ride".
 
-# Libraries used
-* NetworkX
-* Matplotlib
-* OpenCV
-* PyDot
 
 # Usage
 Playing on the Europe map and having the goals Sochi, Edinburgh, Stockholm, and Cadiz:
@@ -15,8 +10,13 @@ This will print the path, cost and visualize the path.
 > path: ['Cadiz', 'Madrid', 'Pamplona', 'Paris', 'Dieppe', 'London', 'Edinburgh', 'London', 'Amsterdam', 'Essen', 'Kobenhavn', 'Stockholm', 'Petrograd', 'Moskva', 'Kharkov', 'Rostov', 'Sochi']\
 >cost: 52
 
-
 ![](https://i.imgur.com/rdre8bG.jpg "Output image")
+
+# Libraries used
+* NetworkX
+* Matplotlib
+* OpenCV
+* PyDot
 
 # TODO
 1. Make own Dijkstra algorithm.
