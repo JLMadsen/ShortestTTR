@@ -13,7 +13,7 @@ Playing on the Europe map and having the goals Sochi, Edinburgh, Stockholm, and 
 
 This will print the path, cost and visualize the path.
 
-![](https://i.imgur.com/hNLQuDY.jpg "Output image")
+![](https://i.imgur.com/rdre8bG.jpg "Output image")
 
 # TODO
 1. Make own Dijkstra algorithm.
