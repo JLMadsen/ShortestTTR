@@ -12,6 +12,9 @@ Playing on the Europe map and having the goals Sochi, Edinburgh, Stockholm, and 
 >./ShortestTTR.py Europe Sochi Edinburgh Stockholm Cadiz
 
 This will print the path, cost and visualize the path.
+> path: ['Cadiz', 'Madrid', 'Pamplona', 'Paris', 'Dieppe', 'London', 'Edinburgh', 'London', 'Amsterdam', 'Essen', 'Kobenhavn', 'Stockholm', 'Petrograd', 'Moskva', 'Kharkov', 'Rostov', 'Sochi']\
+>cost: 52
+
 
 ![](https://i.imgur.com/rdre8bG.jpg "Output image")
 
