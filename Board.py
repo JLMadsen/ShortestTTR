@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 If there are any maps you want to be added just send an email and a picture of the map
 

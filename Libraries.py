@@ -1,5 +1,14 @@
+#!/usr/bin/python3
+
 """
 For installing all the necessary libraries.
+
+Libraries:
+Pydot
+Matplotlib
+NetworkX
+OpenCV
+
 """
 
 import os

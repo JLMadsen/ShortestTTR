@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import networkx as nx
 from networkx.drawing.nx_pydot import write_dot
 import matplotlib.pyplot as plt

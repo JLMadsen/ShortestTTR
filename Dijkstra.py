@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # for example shown beneath
 from Board import Board
 board = Board()

@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This script is used to create maps and positions, it makes it easy by printing the dictionary so i can paste it into Boards.py.
 
