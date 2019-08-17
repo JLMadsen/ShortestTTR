@@ -66,4 +66,4 @@ def dijkstra(graph, source, destination, predecessor={}, distances={}, visited=[
 
 # if you run this file it will just run an example
 if __name__ == '__main__':
-    print(dijkstra(board.getMap("Europe"), 'Edinburgh', 'London'))
+    print(dijkstra(board.getMap("Europe"), 'Edinburgh', 'Sochi'))

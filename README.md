@@ -17,10 +17,9 @@ This will print the path, cost and visualize the path.
 
 # TODO
 1. Make own Dijkstra algorithm.
-2. Implement more testing to make sure everything goes right.
-3. Add more maps.
-4. Add colors according to original TTR map.
-5. Export script to either an app or webpage.
+2. Add more maps.
+3. Add colors according to original TTR map.
+4. Export script to either an app or webpage.
 
 # Ticket to ride
 > https://en.wikipedia.org/wiki/Ticket_to_Ride_(board_game)

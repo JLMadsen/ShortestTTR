@@ -96,7 +96,11 @@ def tryPath(homemade, perm):
 def getMaps():
     return board.getMaps()
 
-if __name__ == '__main__':
+def getNodes(mapName):
+    graph, pos = board.getMap(mapName)
+    return graph.keys()
+
+def main():
     # input map and goals, not checking too much here as it will be selectable later
     
     #mapName = sys.argv[1]
@@ -165,3 +169,6 @@ if __name__ == '__main__':
     
     closeWindows()
     exit("Closing...")
+    
+if __name__ == '__main__':
+    main()
