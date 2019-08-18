@@ -16,11 +16,7 @@ class Board():
         return self.maps
     
     def getMap(self, mapName):
-        
-        # this will be changed as more maps are implemented
-        if mapName != 'Europe':
-            exit('Map not implemented')
-        
+                
         europe_nodes = {'Edinburgh': {'London': 4}, 
                         'London': {'Edinburgh': 4, 'Dieppe': 2, 'Amsterdam': 2}, 
                         'Dieppe': {'London': 2, 'Brest': 2, 'Paris': 1, 'Bruxelles': 2}, 
@@ -68,7 +64,53 @@ class Board():
                         'Erzurum': {'Sochi': 3, 'Sevastapol': 4, 'Angora': 3}, 
                         'Angora': {'Erzurum': 3, 'Constantinople': 2, 'Smyrna': 3}}
         
-        europe_pos = {'Edinburgh': (3, 13), 'London': (4, 10), 'Dieppe': (4, 8), 'Brest': (2, 8), 'Pamplona': (4, 4), 'Paris': (5, 7), 'Bruxelles': (6, 9), 'Amsterdam': (6, 10), 'Madrid': (2, 3), 'Lisboa': (1, 2), 'Cadiz': (2, 1), 'Barcelona': (4, 2), 'Marseille': (7, 4), 'Zurich': (7, 6), 'Frankfurt': (7, 8), 'Essen': (8, 9), 'Munchen': (9, 7), 'Venezia': (9, 5), 'Roma': (9, 3), 'Palermo': (10, 1), 'Brindisi': (11, 3), 'Kobenhavn': (9, 11), 'Berlin': (10, 9), 'Stockholm': (11, 13), 'Petrograd': (17, 12), 'Danzig': (12, 10), 'Warzawa': (13, 9), 'Wien': (11, 7), 'Zagrab': (11, 5), 'Budapest': (12, 6), 'Riga': (14, 12), 'Wilno': (15, 10), 'Moskva': (19, 10), 'Smolensk': (17, 9), 'Kyiv': (16, 8), 'Smyrna': (15, 1), 'Athina': (13, 2), 'Sarajevo': (12, 4), 'Sofia': (14, 4), 'Bucuresti': (15, 5), 'Constantinople': (16, 3), 'Sevastapol': (17, 5), 'Kharkov': (18, 7), 'Rostov': (19, 6), 'Sochi': (19, 4), 'Erzurum': (19, 2), 'Angora': (17, 2)}
+        europe_pos = {'Edinburgh': (3, 13), 
+                      'London': (4, 10), 
+                      'Dieppe': (4, 8), 
+                      'Brest': (2, 8), 
+                      'Pamplona': (4, 4), 
+                      'Paris': (5, 7), 
+                      'Bruxelles': (6, 9), 
+                      'Amsterdam': (6, 10), 
+                      'Madrid': (2, 3), 
+                      'Lisboa': (1, 2), 
+                      'Cadiz': (2, 1), 
+                      'Barcelona': (4, 2), 
+                      'Marseille': (7, 4), 
+                      'Zurich': (7, 6), 
+                      'Frankfurt': (7, 8), 
+                      'Essen': (8, 9), 
+                      'Munchen': (9, 7), 
+                      'Venezia': (9, 5), 
+                      'Roma': (9, 3), 
+                      'Palermo': (10, 1), 
+                      'Brindisi': (11, 3), 
+                      'Kobenhavn': (9, 11), 
+                      'Berlin': (10, 9), 
+                      'Stockholm': (11, 13), 
+                      'Petrograd': (17, 12), 
+                      'Danzig': (12, 10), 
+                      'Warzawa': (13, 9), 
+                      'Wien': (11, 7), 
+                      'Zagrab': (11, 5), 
+                      'Budapest': (12, 6), 
+                      'Riga': (14, 12), 
+                      'Wilno': (15, 10), 
+                      'Moskva': (19, 10), 
+                      'Smolensk': (17, 9), 
+                      'Kyiv': (16, 8), 
+                      'Smyrna': (15, 1), 
+                      'Athina': (13, 2), 
+                      'Sarajevo': (12, 4), 
+                      'Sofia': (14, 4), 
+                      'Bucuresti': (15, 5), 
+                      'Constantinople': (16, 3), 
+                      'Sevastapol': (17, 5), 
+                      'Kharkov': (18, 7), 
+                      'Rostov': (19, 6), 
+                      'Sochi': (19, 4), 
+                      'Erzurum': (19, 2), 
+                      'Angora': (17, 2)}
 
         america_nodes = {'Vancouver': {'Calgary': 3, 'Seattle': 1}, 
                          'Calgary': {'Vancouver': 3, 'Seattle': 4, 'Helena': 4, 'Winnipeg': 6}, 
@@ -105,7 +147,43 @@ class Board():
                          'NewYork': {'Washington': 2, 'Pittsburgh': 2, 'Montreal': 3, 'Boston': 2}, 
                          'Montreal': {'SaultStMarie': 5, 'Toronto': 3, 'NewYork': 3, 'Boston': 2}, 
                          'Boston': {'Montreal': 2, 'NewYork': 2}}
-        america_pos ={} 
+        
+        america_pos = {'Vancouver': (2, 12), 
+                       'Calgary': (5, 12), 
+                       'Seattle': (2, 11), 
+                       'Portland': (1, 10), 
+                       'SanFrancisco': (1, 6), 
+                       'LosAngeles': (2, 4), 
+                       'LasVegas': (4, 5), 
+                       'SaltLakeCity': (4, 7), 
+                       'Helena': (6, 10), 
+                       'Winnipeg': (9, 12), 
+                       'ElPaso': (7, 3), 
+                       'Phoenix': (5, 4), 
+                       'SantaFe': (7, 5), 
+                       'Denver': (7, 7), 
+                       'Dallas': (11, 3), 
+                       'Houston': (11, 2), 
+                       'OklahomaCity': (10, 4), 
+                       'Omaha': (10, 8), 
+                       'KansasCity': (10, 6), 
+                       'Duluth': (11, 10), 
+                       'LittleRock': (12, 5), 
+                       'SaintLouis': (12, 7), 
+                       'Chicago': (13, 8), 
+                       'NewOrleans': (14, 3), 
+                       'Nashville': (14, 6), 
+                       'Pittsburgh': (16, 9), 
+                       'Toronto': (15, 11), 
+                       'SaultStMarie': (12, 11), 
+                       'Atlanta': (15, 5), 
+                       'Raleigh': (16, 7), 
+                       'Miami': (18, 2), 
+                       'Charleston': (17, 5), 
+                       'Washington': (18, 8), 
+                       'NewYork': (17, 10), 
+                       'Montreal': (17, 12), 
+                       'Boston': (18, 11)}
                   
         england_nodes ={}
         england_pos ={}

@@ -108,7 +108,7 @@ def main():
     
     #mapName = sys.argv[1]
     #mapName = input()
-    mapName = "Europe"
+    mapName = "America"
     
     global graph
     global pos
@@ -117,7 +117,7 @@ def main():
     
     #goals = sys.argv[2:]
     goals = input().split(" ")
-    
+    """
     for i in range(len(goals)):
         goals[i] = goals[i].capitalize()
         
@@ -125,7 +125,7 @@ def main():
         if goals[i] not in graph:
             print(goals[i] +"not in graph, check spelling and try again")
             goals[i] = input().capitalize()
-            
+    """
     # basic checks
     if not goals or len(goals) == 1:
         exit("Not enough goals.")
