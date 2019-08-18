@@ -10,7 +10,7 @@ This will print the path, cost and visualize the path.
 > path: ['Cadiz', 'Madrid', 'Pamplona', 'Paris', 'Dieppe', 'London', 'Edinburgh', 'London', 'Amsterdam', 'Essen', 'Kobenhavn', 'Stockholm', 'Petrograd', 'Moskva', 'Kharkov', 'Rostov', 'Sochi']\
 >cost: 52
 
-![](https://i.imgur.com/AsA4NM2.mp4 "Output image")
+![](https://i.imgur.com/ZBQotv4.gif "Output image")
 
 # Libraries used
 * NetworkX
