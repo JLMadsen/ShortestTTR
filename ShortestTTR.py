@@ -106,17 +106,17 @@ def getNodes(mapName):
 def main():
     # input map and goals, not checking too much here as it will be selectable later
     
-    #mapName = sys.argv[1]
+    mapName = sys.argv[1]
     #mapName = input()
-    mapName = "America"
+    #mapName = "America"
     
     global graph
     global pos
     
     graph, pos = board.getMap(mapName)
     
-    #goals = sys.argv[2:]
-    goals = input().split(" ")
+    goals = sys.argv[2:]
+    #goals = input().split(" ")
     """
     for i in range(len(goals)):
         goals[i] = goals[i].capitalize()
