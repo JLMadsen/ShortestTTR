@@ -131,7 +131,6 @@ def MapAndGoals(sysArgv):
     global pos
     
     graph, pos = board.getMap(mapName)
-
     if not goals or len(goals) == 1:
         exit("Not enough goals.")
 

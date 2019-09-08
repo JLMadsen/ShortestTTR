@@ -23,6 +23,7 @@ This will print the path, cost and visualize the path.
 2. Add more maps.
 3. Add colors according to original TTR map.
 4. Export script to either an app or webpage.
+5. Fix Cul-de-sac's. In the usage section the shortest path visits London twice.
 
 # Scripts
 There are some unecessary scripts in this repository, they are mostly for my own sake.
