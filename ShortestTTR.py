@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import networkx as nx
 from networkx.drawing.nx_pydot import write_dot
 import matplotlib.pyplot as plt
@@ -28,6 +26,20 @@ def saveImage():
     
     # clear image to prevent overlap
     plt.clf()
+
+# TODO: check deeper cul de sac's and fix them
+# CUrrent implementation only finds them.
+def cul_de_sac(path):
+    
+    nodes = []
+    
+    for i in range(len(path)-1):
+        for j in range(i+1, len(path)):
+            if path[i] == path[j]:
+                nodes.append(path[i])
+    
+    print("nodes visited more than once:")
+    print(nodes)
 
 def drawImage():
     # read image and show
@@ -103,33 +115,31 @@ def getNodes(mapName):
     graph, pos = board.getMap(mapName)
     return graph.keys()
 
-def main():
-    # input map and goals, not checking too much here as it will be selectable later
+def MapAndGoals(sysArgv):
     
-    #mapName = sys.argv[1]
-    #mapName = input()
-    mapName = "America"
-    
+    if(sysArgv):
+        # Enter map name, then goals, seperated by spaces.
+        mapName = sys.argv[1]
+        goals = sys.argv[2:]
+    else:
+        print("Enter map name")
+        mapName = input()
+        print("Enter goals, seperate with space.")
+        goals = input().split(" ")
+
     global graph
     global pos
     
     graph, pos = board.getMap(mapName)
-    
-    #goals = sys.argv[2:]
-    goals = input().split(" ")
-    """
-    for i in range(len(goals)):
-        goals[i] = goals[i].capitalize()
-        
-        # give another attempt at entering node
-        if goals[i] not in graph:
-            print(goals[i] +"not in graph, check spelling and try again")
-            goals[i] = input().capitalize()
-    """
-    # basic checks
+
     if not goals or len(goals) == 1:
         exit("Not enough goals.")
 
+def main():
+    
+    sysArgv = False
+    MapAndGoals(sysArgv)
+    
     # add nodes, 47 total
     G.add_nodes_from(graph.keys())
 
@@ -170,6 +180,7 @@ def main():
     path, weight = routes[lowest]
     visualizePath(G, path)
     print(path, weight)
+    cul_de_sac(path)
     
     # pause to see image
     time.sleep(4) 
