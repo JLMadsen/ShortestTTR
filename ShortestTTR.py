@@ -70,7 +70,7 @@ def visualizePath(G, path):
     for i in range(len(path)-1):
         G.add_edge(path[i], path[i+1], color='g', width=2.0)
 
-# homemade bool refers to using my dijkstra algorithm or the NetworkX dijkstra
+# bool indicates wether to use nx's dijkstra or src dijkstra.
 def tryPath(homemade, perm):
     
     # paths are all the seperate paths between nodes, eg. Edinburgh -> Sochi, Sochi -> Stockholm
@@ -110,14 +110,6 @@ def tryPath(homemade, perm):
 
     return path, weight
 
-# probably not necessarry
-def getMaps():
-    return board.getMaps()
-
-def getNodes(mapName):
-    graph, pos = board.getMap(mapName)
-    return graph.keys()
-
 def MapAndGoals(sysArgv):
     
     if(sysArgv):
@@ -137,10 +129,12 @@ def MapAndGoals(sysArgv):
     if not goals or len(goals) == 1:
         exit("Not enough goals.")
 
+    return mapName, goals
+
 def main():
     # input method
-    sysArgv = False
-    MapAndGoals(sysArgv)
+    sysArgv = True
+    mapName, goals = MapAndGoals(sysArgv)
     
     # add nodes, 47 total
     G.add_nodes_from(graph.keys())

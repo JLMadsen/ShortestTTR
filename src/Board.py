@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-If there are any maps you want to be added just send an email and a picture of the map
+If there are any maps you want to be added just send an email with a picture of the map to dev@dsen.tv
 
 There is probably a better method of storing the nodes and positions but this is how i chose to do it.
 
@@ -230,3 +230,9 @@ class Board():
         
         nodes, pos = boards[self.maps.index(mapName)]
         return nodes, pos
+
+
+    def getCities(self, mapName):
+        nodes, pos = self.getMap(mapName)
+        cities = nodes.keys
+        return cities
