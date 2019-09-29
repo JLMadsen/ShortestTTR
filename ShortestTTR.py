@@ -25,7 +25,7 @@ def saveImage():
     nx.draw(G, pos, edges=edges, edge_color=colors, width=widths, with_labels=True)
 
     # save to root dir as png
-    plt.savefig("Graph.png")
+    plt.savefig("out/Graph.png")
     
     # clear image to prevent overlap
     plt.clf()
@@ -46,7 +46,7 @@ def cul_de_sac(path):
 
 def drawImage():
     # read image and show
-    img = cv2.imread('Graph.png', 1)
+    img = cv2.imread('out/Graph.png', 1)
     cv2.imshow('image', img)
     cv2.waitKey(1)
 
