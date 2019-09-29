@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # for example shown beneath
-from Board import Board
+from src.Board import Board
 board = Board()
 
 # you only need to give the first three parameters.

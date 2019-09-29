@@ -1,10 +1,13 @@
+import cv2, time, pydot, sys
+
 import networkx as nx
 from networkx.drawing.nx_pydot import write_dot
+
 import matplotlib.pyplot as plt
-import cv2, time, pydot, sys
-from Dijkstra import dijkstra
-from Board import Board
 from itertools import permutations
+
+from src.Dijkstra import dijkstra
+from src.Board import Board
 
 graph = {}
 pos = {}
@@ -135,7 +138,7 @@ def MapAndGoals(sysArgv):
         exit("Not enough goals.")
 
 def main():
-    
+    # input method
     sysArgv = False
     MapAndGoals(sysArgv)
     

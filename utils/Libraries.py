@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 """
 For installing all the necessary libraries.
 
@@ -15,6 +13,9 @@ import os
 
 libraries = ['pydot', 'matplotlib', 'networkx', 'opencv-python']
 pip = 'pip install'
+
+# update pip
+os.system("pip install --upgrade pip")
 
 for lib in libraries:
     os.system((pip +" "+ lib))
