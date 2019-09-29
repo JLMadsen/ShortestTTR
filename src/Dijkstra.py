@@ -1,24 +1,20 @@
 #!/usr/bin/python3
 
-# for example shown beneath
-from src.Board import Board
-board = Board()
+"""
+SOURCE:
+http://www.gilles-bertrand.com/2014/03/dijkstra-algorithm-python-example-source-code-shortest-path.html
+http://www.gilles-bertrand.com/2014/03/disjkstra-algorithm-description-shortest-path-pseudo-code-data-structure-example-image.html
+
+Modified to fit my program.
+
+graph format:
+    {'node1': {'node2' : 4, 'node3' : 2}, 'node2': {'node1' : 4}, ...}
+Predecessor:
+    "Structure that will keep for every node its father"
+"""
 
 # you only need to give the first three parameters.
 def dijkstra(graph, source, destination, predecessor={}, distances={}, visited=[]):
-    
-    """
-    SOURCE:
-    http://www.gilles-bertrand.com/2014/03/dijkstra-algorithm-python-example-source-code-shortest-path.html
-    http://www.gilles-bertrand.com/2014/03/disjkstra-algorithm-description-shortest-path-pseudo-code-data-structure-example-image.html
-    
-    Modified to fit my program.
-    
-    graph format:
-        {'node1': {'node2' : 4, 'node3' : 2}, 'node2': {'node1' : 4}, ...}
-    Predecessor:
-        "Structure that will keep for every node its father"
-    """
     
     # Check if path is not possible
     if source not in graph or destination not in graph:
@@ -65,7 +61,10 @@ def dijkstra(graph, source, destination, predecessor={}, distances={}, visited=[
         # next recursion will use the lowest cost neighbor as new source.
         new_source = min(unvisited, key=unvisited.get)
         return dijkstra(graph, new_source, destination, predecessor, distances, visited)
-
+    
 # if you run this file it will just run an example
+from src.Board import Board
+board = Board()
+
 if __name__ == '__main__':
     print(dijkstra(board.getMap("Europe"), 'Edinburgh', 'Sochi'))
