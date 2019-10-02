@@ -19,11 +19,11 @@ This will print the path, cost and visualize the path.
 * PyDot
 
 # TODO
-1. Improve own Dijkstra algorithm.
+1. Improve own Dijkstra algorithm.\
     1.1. Learn A*.
 2. Add more maps.
 3. Add colors according to original TTR map.
-4. Export script to webpage.
+4. Export script to webpage.\
     4.1. Learn web with django.
 5. Fix Cul-de-sac's. In the usage section the shortest path visits London twice.
 
