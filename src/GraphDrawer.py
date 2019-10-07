@@ -1,9 +1,8 @@
 import cv2, time, pydot, sys
-
 import networkx as nx
-from networkx.drawing.nx_pydot import write_dot
-
 import matplotlib.pyplot as plt
+
+from networkx.drawing.nx_pydot import write_dot
 from itertools import permutations
 
 """
@@ -45,6 +44,7 @@ class GraphDrawer:
         for i in range(len(edges)-1):
             self.graph.add_edges(edges[i], edges[i+1], color)
     
+    # for preventing coordinate to be None.
     def checkPos(self, coordinate) -> int:
         
         return coordinate or 0
@@ -57,6 +57,7 @@ class GraphDrawer:
     
     def addNode(self, node, x=None, y=None) -> None:
         
+        # if x or y is initialized position will be added with the node.
         if x or y:
             self.graph.add_node(node, checkPos(x), checkPos(y))
         else:
@@ -68,7 +69,7 @@ class GraphDrawer:
             self.graph.add_nodes_from(nodes, pos)
         else:
             self.graph.add_nodes_from(nodes)
-            
+
     def saveImage(self):
         
         pass
