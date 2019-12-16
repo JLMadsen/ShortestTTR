@@ -19,13 +19,10 @@ This will print the path, cost and visualize the path.
 * PyDot
 
 # TODO
-1. Improve own Dijkstra algorithm.\
-    1.1. Learn A*.
+1. Improve own Dijkstra algorithm.
 2. Add more maps.
 3. Add colors according to original TTR map.
-4. Export script to webpage.\
-    4.1. Learn web with django.
-5. Fix Cul-de-sac's. In the usage section the shortest path visits London twice.
+4. Fix Cul-de-sac's. In the usage section the shortest path visits London twice.
 
 # Scripts
 There are some unecessary scripts in this repository, they are mostly for my own sake.
@@ -43,10 +40,6 @@ If you want to use this you only need ShortestTTR, se usage above.
 
 * Mapper\
     Script which makes it easier to get the graph and positions.
-
-* Libraries\
-    Script that installs all the necessary libraries.
-
 
 # Ticket to ride
 > https://en.wikipedia.org/wiki/Ticket_to_Ride_(board_game)
