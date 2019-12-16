@@ -3,6 +3,9 @@ Python script for getting shortest path connecting all given goals in the board 
 
 
 # Usage
+Format:
+>./ShortestTTR.py map goal1 goal2 goal3 goal4
+
 Playing on the Europe map and having the goals Sochi, Edinburgh, Stockholm, and Cadiz:
 >./ShortestTTR.py Europe Sochi Edinburgh Stockholm Cadiz
 
